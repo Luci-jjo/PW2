@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScarLop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0b0e2a;
+  color: white;
+  padding: 10px 20px;
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Main form section */
+.form-page {
+  position: relative;
+  background: url('https://s2.glbimg.com/ayJGJSwiND8wIDlXHdMm1W-MU3QQW1ekYZD_0miI4SpIoz-HdGixxa_8qOZvMp3w/e.glbimg.com/og/ed/f/original/2013/09/09/uploads-289_gallery10-mini.jpg'
+  ) center/cover no-repeat;height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.306);
+  z-index: 0;
+}
+
+.form-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-box {
+  background-color: rgb(252, 239, 223);
+  padding: 25px;
+  border-radius: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #0b0e2a;
+}
+
+.form-box span {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.form-box input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #d6d6d6;
+}
+
+/* Cadastrar botão */
+.submit-button {
+  z-index: 1;
+}
+
+.submit-button button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #0b0e2a;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer-icon {
+  background-color: #0b0e2a;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.8rem;
+}
+
+</style>
+<body>
+
+  <header class="navbar">
+    <div class="menu-icon">☰</div>
+    <nav>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="listar.html">Listar</a></li>
+        <li><a href="cadastro.html">Cadastrar</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a class="sel" href="editar.html">Editar</a></li>
+    </nav>
+   </header>
+
+    <main class="form-page">
+    <div class="overlay"></div>
+
+    <section class="form-container">
+      <div class="form-box">
+        <h2>Cadastro <span>pessoal</span></h2>
+        <input type="text" placeholder="Título da publicação">
+        <input type="date" placeholder="Data da publicação">
+        <input type="text" placeholder="Seu nome">
+        <input type="text" placeholder="Descrição">
+        <input type="tel" placeholder="Seu telefone">
+      </div>
+
+      <div class="form-box">
+        <h2>Cadastro <span>veículo</span></h2>
+        <input type="text" placeholder="Placa do veículo">
+        <input type="text" placeholder="Marca do veículo">
+        <input type="text" placeholder="Modelo do veículo">
+        <input type="text" placeholder="Ano do veículo">
+        <input type="text" placeholder="Cor do veículo">
+      </div>
+    </section>
+
+    <div class="submit-button">
+      <button>Salvar</button>
+    </div>
+  </main>
+
+  
+
+  <footer class="footer-icon">
+    <span><img class="imgf" src="https://static.vecteezy.com/ti/vetor-gratis/p1/47425370-esporte-carro-icone-esporte-auto-ilustracao-placa-carro-simbolo-ou-logotipo-vetor.jpg"
+         alt="logo footer"></span>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScarLop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Já inclui o básico, navbar e overlay iguais aos anteriores */
+
+.list-page {
+  position: relative;
+  background: url('https://s2.glbimg.com/ayJGJSwiND8wIDlXHdMm1W-MU3QQW1ekYZD_0miI4SpIoz-HdGixxa_8qOZvMp3w/e.glbimg.com/og/ed/f/original/2013/09/09/uploads-289_gallery10-mini.jpg'
+  ) center/cover no-repeat;height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.306);
+  z-index: 0;
+}
+
+.vehicle-list {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.vehicle-card {
+  background-color: rgb(252, 239, 223);
+  border-radius: 20px;
+  padding: 20px;
+  width: 450px;
+  height: 230px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  display: flex;
+}
+
+.vehicle-card img {
+  width: 70%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+
+.vehicle-card ul {
+  list-style: disc;
+  text-align: left;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.button-row button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.edit {
+  background-color: #f0f0f0;
+}
+
+button.delete {
+  background-color: #0b0e2a;
+  color: white;
+}
+
+.central-button {
+  position: relative;
+  z-index: 1;
+}
+
+.central-button button {
+  background-color: #0b0e2a;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+}
+
+img {
+    width: 200px;
+}
+
+</style>
+<body>
+
+  <header class="navbar">
+    <div class="menu-icon">☰</div>
+    <nav>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="listar.html">Listar</a></li>
+        <li><a href="cadastro.html">Cadastrar</a></li>
+        <li><a class="sel" href="catalogo.html">Catálogo</a></li>
+    </nav>
+   </header>
+
+   <main class="list-page">
+  <div class="overlay"></div>
+
+  <section class="vehicle-list">
+    <!-- Card 1 -->
+    <div class="vehicle-card">
+      <img src="img/lambo.png" alt="Lamborghini">
+      <ul>
+        <li>descrição</li>
+        <li>data</li>
+        <li>marca</li>
+        <li>modelo</li>
+        <li>cor</li>
+        <li>placa</li>
+        <li>ano</li>
+      </ul>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="vehicle-card">
+      <img src="https://images-porsche.imgix.net/-/media/2B1B53F155074C1591397D78EE530FA4_54F74867AE7F4D2B87128A2C3F761F1D_CZ25W12IX0011-911-carrera-gts-front?w=999&q=85&auto=format" alt="Porsche">
+      <ul>
+        <li>descrição</li>
+        <li>data</li>
+        <li>marca</li>
+        <li>modelo</li>
+        <li>cor</li>
+        <li>placa</li>
+        <li>ano</li>
+      </ul>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="vehicle-card">
+      <img src="https://images-porsche.imgix.net/-/media/2B1B53F155074C1591397D78EE530FA4_54F74867AE7F4D2B87128A2C3F761F1D_CZ25W12IX0011-911-carrera-gts-front?w=999&q=85&auto=format" alt="Porsche">
+      <ul>
+        <li>descrição</li>
+        <li>data</li>
+        <li>marca</li>
+        <li>modelo</li>
+        <li>cor</li>
+        <li>placa</li>
+        <li>ano</li>
+      </ul>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="vehicle-card">
+      <img src="img/lambo.png" alt="Lamborghini">
+      <ul>
+        <li>descrição</li>
+        <li>data</li>
+        <li>marca</li>
+        <li>modelo</li>
+        <li>cor</li>
+        <li>placa</li>
+        <li>ano</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="central-button">
+    <button>Veículos à venda</button>
+  </div>
+</main>
+
+  <footer class="footer-icon">
+    <span><img class="imgf" src="https://static.vecteezy.com/ti/vetor-gratis/p1/47425370-esporte-carro-icone-esporte-auto-ilustracao-placa-carro-simbolo-ou-logotipo-vetor.jpg"
+         alt="logo footer"></span>
+  </footer>
+
+</body>
+</html>
