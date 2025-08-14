@@ -1,0 +1,70 @@
+<script>
+    class Pessoa {
+        constructor(nome, idade, cpf) {
+            this.nome = nome;
+            this.idade = idade;
+            this.cpf = cpf;
+        }
+
+        falar(){
+            console.log(`A pessoa falou`)
+        }
+        andar(){
+            console.log(`A pessoa andou`)
+        }
+        correr(){
+            console.log(`A pessoa correu`)
+        }
+    }
+
+    let professor = new Pessoa('Hipaminondas', '16', '333');
+    console.log(professor)
+    console.log(professor.nome);
+    console.log(professor.idade);
+    console.log(professor.cpf);
+    console.log(professor.falar());
+    console.log(professor.andar());
+
+    let aluno = new Pessoa ('Diogo', '29', '123');
+    console.log(aluno);
+
+    //criar classe usuario
+    //o usuario pode ser adm ou user comum
+    //necessario email e senha pro user
+    //necesario saber se o user esta off ou on
+
+    class User {
+        //no constru
+        constructor(nome, tipo, email, senha, status){
+            this.nome = nome;
+            this.email = tipo;
+            this.pass = email;
+            this.pass = senha;
+            this.pass = status;
+        }
+        
+        
+        conectar(){
+            console.log(`${User.nome} conectado`);
+        }
+        
+        desconectar(){
+            console.log(`${User.nome} desconectado`);
+        }
+        
+        recuperarSenha(){
+            console.log(`Senha atualizada!`);
+        }
+        
+        desativarConta(){
+            console.log(`Conta desativada!`);
+        }
+        
+        alterarTipo(){
+            console.log(`O tipo da conta foi atualizado!`);
+        }
+    }
+
+    let admin = new User('Diogo', 'admin', 'ab@gmail.com', '123', 'online')
+        
+    </script>

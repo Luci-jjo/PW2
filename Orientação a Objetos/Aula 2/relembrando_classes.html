@@ -1,0 +1,63 @@
+<script>
+    //Usa-se Pascal Case para o nome da classe
+    class Funcionario{
+        constructor(nome, salario_base, horas_trabalhadas){
+            this.nome = nome;
+            this.salario_base = salario_base; //use snacke_case
+            this.horas_trabalhadas = horas_trabalhadas;
+        }
+
+        calcularSalario() { //use camelCasex
+            return this.salario_base * this.horas_trabalhadas;
+        }
+        // set ira trocar o valor da var nome
+        set nomeFuncionario(nome) {
+            this.nome = nome;
+        }
+        //ira retornar o valor contido em this.nome
+        get nomeFuncionario(){
+            return this.nome;
+        }
+
+        set salarioBase(salario_base){
+            this.salario_base;
+        }
+
+        get salarioBase(){
+            return this.salario_base;
+        }
+
+        set horasTrabalhadas(horas_trabalhadas){
+            this.salario_base;
+        }
+
+        get horasTrabalhadas(){
+            return this.horas_trabalhadas;
+        }
+        
+    }
+
+    let programador_backend = new Funcionario();
+    programador_backend.nomeFuncionario= 'Carlitos';
+    programador_backend.salarioBase = 50;
+    programador_backend.horasTrabalhadas = 100;
+    console.log(programador_backend.calcularSalario());
+
+    let desenvolvedor_frontend = new Funcionario();
+    desenvolvedor_frontend.nomeFuncionario = 'Joaquim';
+    desenvolvedor_frontend.salarioBase = 10;
+    desenvolvedor_frontend.horasTrabalhadas = 200;
+    console.log(desenvolvedor_frontend.calcularSalario());
+
+    let ux_design = new Funcionario();
+    ux_design.nomeFuncionario = 'Joca';
+    ux_design.salarioBase = 10;
+    ux_design.horasTrabalhadas = 200;
+    console.log(ux_design.calcularSalario());
+    
+    let gerente = new Funcionario();
+    gerente.nomeFuncionario = 'Jiro';
+    gerente.salarioBase = 9;
+    gerente.horasTrabalhadas = 120;
+    console.log(gerente.calcularSalario());
+</script>

@@ -1,0 +1,108 @@
+<script>
+    class Veiculo {
+        constructor(marca, modelo) {
+            this.marca = marca;
+            this.modelo = modelo;
+        }
+
+        acelerar(){
+            console.log(`${this.modelo} acelerou!!!!!`)
+        }
+
+        frear(){
+            console.log(`${this.modelo} freou!!!!`)
+        }
+    }
+
+    let Veiculo_1 = new Veiculo('Fiat', 'Uno');
+    console.log(`Seu veiculo é ${Veiculo_1.modelo}`)
+    Veiculo_1.acelerar();
+    Veiculo_1.frear();
+
+    console.log(Veiculo_1);
+
+    let Veiculo_2 = new Veiculo('Honda', 'Civic');
+    console.log(`Seu veiculo é ${Veiculo_2.modelo}`)
+    Veiculo_2.acelerar();
+    Veiculo_2.frear();
+
+    console.log(Veiculo_2);
+
+    class Pessoa {
+        //caracteristicas | Propriedades
+        constructor(nome, cpf, idade, telefone){
+            this.nome = nome;
+            this.cpf = cpf;
+            this.idade = idade;
+            this.telefone = telefone;
+        }
+
+        //Ações | Método
+        correr(){
+            console.log(`${this.nome} correu`)
+        }
+
+        pular(){
+            console.log(`${this.nome} pulou`)
+        }
+
+        falar(){
+            console.log(`${this.nome} disse Olá!!!`)
+        }
+
+
+    }
+
+    let Pessoa_1 = new Pessoa('Arlindo', "123", "18", "4002-8922");
+    Pessoa_1.correr();
+    Pessoa_1.falar();
+    Pessoa_1.pular();
+
+    class Animal {
+        //Caracteristicas
+        constructor(nome, cor, sexo, raça, altura) {
+            this.nome = nome;
+            this.cor = cor;
+            this.sexo = sexo;
+            this.raça = raça;
+        }
+
+        latir(){
+            console.log(`${this.nome} AUAUAUAU!!!`)
+        }
+
+        sentar(){
+            console.log(`${this.nome} sentou`)
+        }
+
+        deitar(){
+            console.log(`${this.nome} deitou`)
+        }
+
+        rolar(){
+            console.log(`${this.nome} rolou`)
+        }
+
+    }
+
+    class Cachorro extends Animal {
+        constructor(nome, peso, cor, especie, altura){
+            super(nome, peso, cor, especie);
+            this.altura - altura;
+        }
+        latir(){
+            console.log(`Cachorro latiu!!!`)
+        }
+    }
+
+    let cao = new Cachorro("Salsicho", "marrom", "macho", "salsicha")
+    cao.latir();
+
+    let Animal_1 = new Animal("Thor", "Preto", "Macho", "Labrador/Pitbull");
+    Animal_1.latir();
+    Animal_1.sentar();
+    Animal_1.deitar();
+    Animal_1.rolar();
+
+
+</script>
